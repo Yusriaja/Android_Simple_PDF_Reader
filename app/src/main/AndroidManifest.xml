@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sample.project.ayan.simple_pdf_reader" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Simple PDF Reader"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sample.project.ayan.simple_pdf_reader.MainActivity"
+            android:label="Simple PDF Reader" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sample.project.ayan.simple_pdf_reader.Viewer"
+            android:label="@string/title_activity_viewer" >
+        </activity>
+    </application>
+
+</manifest>
